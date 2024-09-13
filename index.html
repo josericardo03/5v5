@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escolha de Times</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Selecione os Jogadores</h1>
+
+    <div class="tier-list">
+      <h2>Tier 1</h2>
+      <ul id="tier1" class="player-list">
+        <li draggable="true" ondragstart="drag(event)">
+          José <span class="valor">8</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Brun <span class="valor">7</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Caio <span class="valor">9</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Rogério <span class="valor">10</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Léo <span class="valor">8</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Xoxota <span class="valor">9</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Nery <span class="valor">9</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Enzo <span class="valor">4</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Jaque <span class="valor">4</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Zanin <span class="valor">5</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Caetano <span class="valor">4</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Didi <span class="valor">6</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          João <span class="valor">6</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Davi <span class="valor">5</span>
+        </li>
+        <li draggable="true" ondragstart="drag(event)">
+          Carlos <span class="valor">4</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="teams">
+      <div class="team">
+        <h2>Meu Time</h2>
+        <ul
+          id="meu-time"
+          class="team-list"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <!-- Jogadores do Meu Time vão aqui -->
+        </ul>
+        <p>Total: <span id="total-meu-time">0</span></p>
+      </div>
+
+      <div class="team">
+        <h2>Time Inimigo</h2>
+        <ul
+          id="time-inimigo"
+          class="team-list"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <!-- Jogadores do Time Inimigo vão aqui -->
+        </ul>
+        <p>Total: <span id="total-time-inimigo">0</span></p>
+      </div>
+    </div>
+
+    <div class="coin-flip">
+      <h2>Cara ou Coroa</h2>
+      <button id="flipButton">Jogar</button>
+      <p id="coinResult">Clique no botão para jogar</p>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

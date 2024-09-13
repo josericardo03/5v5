@@ -1,0 +1,136 @@
+body {
+  font-family: "Beaufort for LoL", Arial, sans-serif;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url("/images/1341675.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #9b59b6;
+  text-shadow: 2px 2px 5px #000;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #9b59b6;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.tier-list,
+.teams {
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.coin-flip {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #9b59b6;
+  border: none;
+  color: #e0e0e0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8e44ad;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.player-list,
+.team-list {
+  list-style-type: none;
+  padding: 10px;
+  background-color: #1c1c1c;
+  border: 2px solid #9b59b6;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 180px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.player-list li,
+.team-list li {
+  padding: 10px;
+  background-color: #2c2c2c;
+  border: 1px solid #9b59b6;
+  border-radius: 5px;
+  color: #e0e0e0;
+  cursor: grab;
+  transition: background-color 0.3s ease;
+}
+
+.player-list {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.player-list li {
+  break-inside: avoid;
+}
+
+.player-list li:hover,
+.team-list li:hover {
+  background-color: #9b59b6;
+  color: #2a2a2a;
+}
+
+.team-list li {
+  cursor: default;
+  background-color: #3c3c3c;
+}
+
+.team-list li:hover {
+  background-color: #9b59b6;
+}
+
+.tier-list h2,
+.teams h2 {
+  color: #9b59b6;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #9b59b6;
+  text-align: center;
+}
+
+.team p {
+  font-size: 1.2rem;
+  color: #9b59b6;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#total-captain1,
+#total-captain2 {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #3c3c3c;
+  border: 2px solid #9b59b6;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  min-width: 80px;
+}
